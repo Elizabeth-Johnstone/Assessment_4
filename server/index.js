@@ -29,23 +29,16 @@ app.get("/api/fortune", (req, res) => {
   res.status(200).send(randomFortune);
 });
 
-app.get("/api/number", (req, res) => {
-  const luckyNumber = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
-  let numberIndex = Math.floor(Math.random() * luckyNumber.length);
-  let randomNumber = luckyNumber[numberIndex];
+app.get("/api/car", (req, res) => {
+  carReply = "Cool!"
 
-  res.status(200).send(randomNumber);
+  res.status(200).send(carReply);
 });
 
-app.get("/api/advice", (req, res) => {
-  const advice = ["Seize the day!",
-            "Live in the present moment.",
-            "Smile.",
-  ];
-  let adviceIndex = Math.floor(Math.random() * advice.length);
-  let randomAdvice = advice[adviceIndex];
+app.get("/api/animal", (req, res) => {
+  const animalReply = ["Good choice!"];
 
-  res.status(200).send(randomAdvice);
+  res.status(200).send(animalReply);
 });
 
 app.get("/api/favoriteForm", (req, res) => {

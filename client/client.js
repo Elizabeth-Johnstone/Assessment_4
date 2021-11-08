@@ -14,16 +14,16 @@ document.getElementById("complimentButton").onclick = function () {
       });
   };
   
-  document.getElementById("numberButton").onclick = function () {
-    axios.get("http://localhost:4000/api/number/")
+  document.getElementById("carForm").onclick = function () {
+    axios.get("http://localhost:4000/api/car/")
       .then(function (response) {
         const data = response.data;
         alert(data);
       });
   };
 
-  document.getElementById("adviceButton").onclick = function () {
-    axios.get("http://localhost:4000/api/advice/")
+  document.getElementById("animals").onclick = function () {
+    axios.get("http://localhost:4000/api/animal/")
       .then(function (response) {
         const data = response.data;
         alert(data);
