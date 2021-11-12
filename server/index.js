@@ -30,19 +30,39 @@ app.get("/api/fortune", (req, res) => {
 });
 
 app.get("/api/car", (req, res) => {
-  carReply = "Cool!"
 
-  res.status(200).send(carReply);
+  const carReply = ["Cool!",
+            "Nice choice.",
+            "Awesome.",
+  ];
+  let carIndex = Math.floor(Math.random() * carReply.length);
+  let randomCarReply = carReply[carIndex];
+
+  res.status(200).send(randomCarReply);
 });
 
 app.get("/api/animal", (req, res) => {
-  const animalReply = ["Good choice!"];
 
-  res.status(200).send(animalReply);
+  const animalReply = ["You should get one!",
+            "What's your favorite type?",
+            "Do you have one?",
+  ];
+  let animalIndex = Math.floor(Math.random() * animalReply.length);
+  let randomAnimalReply = animalReply[animalIndex];
+
+  res.status(200).send(randomAnimalReply);
 });
 
 app.get("/api/favoriteForm", (req, res) => {
-  res.status(200).send(`Thank you!`);
+
+
+  const favoriteReply = ["Thank you!",
+            "INTERESTING!",
+  ];
+  let favoriteIndex = Math.floor(Math.random() * favoriteReply.length);
+  let randomFavoriteReply = favoriteReply[favoriteIndex];
+
+  res.status(200).send(randomFavoriteReply);
 });
 
 
