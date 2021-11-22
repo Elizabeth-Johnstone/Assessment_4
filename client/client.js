@@ -66,7 +66,7 @@ function createShowCard(showsList) {
   <p class="show-name">Show name: ${showsList.showName}</p>
   <p class="network-name">Network name: ${showsList.networkName}</p>
   <div class="buttons-container">
-  <p class="rating">${showsList.rating}</p>
+  <p class="rating">Rating: ${showsList.rating}/10</p>
   <button onclick="updateShows(${showsList.id}, 'minus')">-</button>
   <button onclick="updateShows(${showsList.id}, 'plus')">+</button>
   </div>
