@@ -1,0 +1,26 @@
+[
+    {
+    "id": 1,
+    "showName": "Keeping up with the Kardashians",
+    "rating": 8,
+    "networkName": "E!"
+  },
+  {
+    "id": 2,
+    "showName": "Psych",
+    "rating": 5,
+    "networkName": "USA"
+  },
+  {
+    "id": 3,
+    "showName": "Grey's Anatomy",
+    "rating": 9,
+    "networkName": "ABC"
+  },
+  {
+    "id": 4,
+    "showName": "Tiger King",
+    "rating": 7,
+    "networkName": "Netflix"
+  }
+]

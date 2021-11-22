@@ -15,56 +15,21 @@
     <br>
     <br>
 
-    <form id="carForm">
-    <input type="checkbox" id="black">
-    <label> I have a black car</label><br>
-    <input type="checkbox" id="red">
-    <label> I have a red car</label><br>
-    <input type="checkbox" id="silver">
-    <label> I have a silver car</label><br>
-  </form>
-
-
-    <br>
-
-    <select id="animals">
-      <option value="cat">Cat</option>
-      <option value="dog">Dog</option>
-      <option value="bird">Bird</option>
-      <option value="horse">Horse</option>
-    </select>
-    <br>
-    <br>
-
-    <form id="favoriteForm">
+    <form id="show-form">
       <input
           type="text"
-          id="color"
-          placeholder="Favorite Color">
-      <input
-          type="text"
-          id="food"
-          placeholder="Favorite Food">
+          id="show-name"
+          placeholder="Name"/>
 
-      <button id="submitButton">Submit</button>
+      <input
+          type=""
+          id="network"
+          placeholder="Network"/>
+      <button id="showsButton">Add a show to our list!</button>
+
     </form>
 
-    <br>
-    <br>
-
-    <form>
-      <input
-          type="text"
-          id="firstName"
-          placeholder="First Name">
-      <input
-          type="text"
-          id="lastName"
-          placeholder="Last Name">
-
-      <button>Submit</button>
-    </form>
-
+    <section id="shows-container"></section>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="client.js"></script>

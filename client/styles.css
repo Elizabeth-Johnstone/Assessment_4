@@ -1,5 +1,5 @@
 body {
-    background: rgb(97, 182, 161);
+    background: rgb(155, 194, 216);
     margin: 1rem;
     padding: 1rem;
     max-width: 300px;
@@ -7,8 +7,20 @@ body {
     font-family: "Open Sans", sans-serif;
   }
 
+.show-name {
+  color:rgb(10, 12, 124);
+  border-radius: 8px;
+  font-size: 14pt;
+  font-weight: 600;
+}
+
+.deleteThis {
+  background-color:rgb(232, 233, 169);
+
+}
 
 button {
-	background-color:rgb(221, 169, 155);
+	background-color:rgb(233, 209, 202);
 	padding: 10px 10px;
+  border-radius: 8px;
 }
